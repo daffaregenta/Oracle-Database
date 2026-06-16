@@ -1,0 +1,82 @@
+
+
+---CEK SQL TEXT
+SELECT sql_id, sql_text
+FROM v$sql
+WHERE sql_text LIKE '%SELECT "A1"."ID","A1"."CREATED_BY","A1"."CREATDE_DATE","A1"."DELETED","A1"."MODIFIED_BY","A1"."MODIFIED_DATE","A1"."VERSION","A1"."DESKRIPSI_TRANS","A1"."JENIS_DOKUMEN"%'
+FETCH FIRST 10 ROWS ONLY;
+
+
+
+SELECT "A1"."ID","A1"."CREATED_BY","A1"."CREATDE_DATE","A1"."DELETED","A1"."MODIFIED_BY","A1"."MODIFIED_DATE","A1"."VERSION","A1"."DESKRIPSI_TRANS","A1"."JENIS_DOKUMEN","A1"." KODE_AKUN","A1"."KODE_BUKU_BESAR","A1"."KODE_COA","A1"."KODE_MATA_UANG_TRANS","A1"."KODE_PERIODE","A1"."KODE_SDATA","A1"."KURS","A1"."NILAI_RUPIAH","A1"."NILAI_TRANS_VALAS","A 1"."NO_DOK","A1"."NOMOR_DIPA","A1"."POSISI_AKUN","A1"."TANGGAL_DIPA","A1"."TGL_DOK","A1"."TGL_JURNAL","A1"."ID_TRN_MODUL" FROM "SAKTI_APP"."GLP_T_FA_DETAIL_16SEG" "A1" WHERE S UBSTR("A1"."KODE_PERIODE",:"SYS_B_0",:"SYS_B_1")=:"SYS_B_2" AND SUBSTR("A1"."NOMOR_DIPA",:"SYS_B_3",:"SYS_B_4")=:"SYS_B_5"
+
+
+SQL_ID        SQL_TEXT
+------------- --------------------------------------------------
+1nz3vfctu8cw0 SELECT "A1"."ID","A1"."CREATED_BY","A1"."CREATDE_D
+              ATE","A1"."DELETED","A1"."MODIFIED_BY","A1"."MODIF
+              IED_DATE","A1"."VERSION","A1"."DESKRIPSI_TRANS","A
+              1"."JENIS_DOKUMEN","A1"."KODE_AKUN","A1"."KODE_BUK
+              U_BESAR","A1"."KODE_COA","A1"."KODE_MATA_UANG_TRAN
+              S","A1"."KODE_PERIODE","A1"."KODE_SDATA","A1"."KUR
+              S","A1"."NILAI_RUPIAH","A1"."NILAI_TRANS_VALAS","A
+              1"."NO_DOK","A1"."NOMOR_DIPA","A1"."POSISI_AKUN","
+              A1"."TANGGAL_DIPA","A1"."TGL_DOK","A1"."TGL_JURNAL
+              ","A1"."ID_TRN_MODUL" FROM "SAKTI_APP"."GLP_T_FA_D
+              ETAIL_16SEG" "A1" WHERE SUBSTR("A1"."KODE_PERIODE"
+              ,:"SYS_B_0",:"SYS_B_1")=:"SYS_B_2" AND SUBSTR("A1"
+              ."NOMOR_DIPA",:"SYS_B_3",:"SYS_B_4")=:"SYS_B_5"
+
+amjh0c8mucjtm SELECT "A1"."ID","A1"."CREATED_BY","A1"."CREATDE_D
+              ATE","A1"."DELETED","A1"."MODIFIED_BY","A1"."MODIF
+              IED_DATE","A1"."VERSION","A1"."DESKRIPSI_TRANS","A
+              1"."JENIS_DOKUMEN","A1"."KODE_AKUN","A1"."KODE_BUK
+              U_BESAR","A1"."KODE_COA","A1"."KODE_MATA_UANG_TRAN
+              S","A1"."KODE_PERIODE","A1"."KODE_SDATA","A1"."KUR
+              S","A1"."NILAI_RUPIAH","A1"."NILAI_TRANS_VALAS","A
+              1"."NO_DOK","A1"."NOMOR_DIPA","A1"."POSISI_AKUN","
+              A1"."TANGGAL_DIPA","A1"."TGL_DOK","A1"."TGL_JURNAL
+              ","A1"."ID_TRN_MODUL" FROM "SAKTI_APP"."GLP_T_FA_D
+              ETAIL_16SEG" "A1"
+
+a9gvhcj70x0ku SELECT "A1"."ID","A1"."CREATED_BY","A1"."CREATDE_D
+              ATE","A1"."DELETED","A1"."MODIFIED_BY","A1"."MODIF
+              IED_DATE","A1"."VERSION","A1"."DESKRIPSI_TRANS","A
+              1"."JENIS_DOKUMEN","A1"."KODE_AKUN","A1"."KODE_BUK
+              U_BESAR","A1"."KODE_COA","A1"."KODE_MATA_UANG_TRAN
+              S","A1"."KODE_PERIODE","A1"."KODE_SDATA","A1"."KUR
+              S","A1"."NILAI_RUPIAH","A1"."NILAI_TRANS_VALAS","A
+              1"."NO_DOK","A1"."NOMOR_DIPA","A1"."POSISI_AKUN","
+              A1"."TANGGAL_DIPA","A1"."TGL_DOK","A1"."TGL_JURNAL
+              ","A1"."ID_TRN_MODUL" FROM "SAKTI_APP"."GLP_T_FA_D
+              ETAIL_16SEG" "A1" WHERE SUBSTR("A1"."KODE_PERIODE"
+              ,:"SYS_B_00",:"SYS_B_01")=:"SYS_B_02" AND SUBSTR("
+              A1"."NOMOR_DIPA",:"SYS_B_03",:"SYS_B_04")=:"SYS_B_
+              05" AND "A1"."DELETED"=:"SYS_B_06" AND SUBSTR("A1"
+              ."KODE_COA",:"SYS_B_07",:"SYS_B_08")=:"SYS_B_09" A
+              ND SUBSTR("A1"."KODE_COA",:"SYS_B_10",:"SYS_B_11")
+              =:"SYS_B_12" AND SUBSTR("A1"."KODE_COA",:"SYS_B_13
+              ",:"SYS_B_14")=:"SYS_B_15"
+
+34atjbmq2km3s SELECT "A1"."ID","A1"."CREATED_BY","A1"."CREATDE_D
+              ATE","A1"."DELETED","A1"."MODIFIED_BY","A1"."MODIF
+              IED_DATE","A1"."VERSION","A1"."DESKRIPSI_TRANS","A
+              1"."JENIS_DOKUMEN","A1"."KODE_AKUN","A1"."KODE_BUK
+              U_BESAR","A1"."KODE_COA","A1"."KODE_MATA_UANG_TRAN
+              S","A1"."KODE_PERIODE","A1"."KODE_SDATA","A1"."KUR
+              S","A1"."NILAI_RUPIAH","A1"."NILAI_TRANS_VALAS","A
+              1"."NO_DOK","A1"."NOMOR_DIPA","A1"."POSISI_AKUN","
+              A1"."TANGGAL_DIPA","A1"."TGL_DOK","A1"."TGL_JURNAL
+              ","A1"."ID_TRN_MODUL" FROM "SAKTI_APP"."GLP_T_FA_D
+              ETAIL_16SEG" "A1" WHERE SUBSTR("A1"."KODE_PERIODE"
+              ,:"SYS_B_00",:"SYS_B_01")=:"SYS_B_02" AND SUBSTR("
+              A1"."NOMOR_DIPA",:"SYS_B_03",:"SYS_B_04")=:"SYS_B_
+              05" AND "A1"."DELETED"=:"SYS_B_06" AND SUBSTR("A1"
+              ."KODE_COA",:"SYS_B_07",:"SYS_B_08")=:"SYS_B_09" A
+              ND SUBSTR("A1"."KODE_COA",:"SYS_B_10",:"SYS_B_11")
+              =:"SYS_B_12" AND SUBSTR("A1"."KODE_COA",:"SYS_B_13
+              ",:"SYS_B_14")=:"SYS_B_15" AND SUBSTR("A1"."KODE_C
+              OA",:"SYS_B_16",:"SYS_B_17")=:"SYS_B_18"
+
+
+SQL>
